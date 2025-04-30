@@ -1,0 +1,236 @@
+# Created at 2025-04-24T11:32:59.553
+Thread dump for process (8000@DESKTOP-RNNVGUF):
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.1/sun.nio.fs.WindowsNativeDispatcher.GetFileAttributesEx0(Native Method)
+        at java.base@17.0.1/sun.nio.fs.WindowsNativeDispatcher.GetFileAttributesEx(WindowsNativeDispatcher.java:390)
+        at java.base@17.0.1/sun.nio.fs.WindowsFileAttributes.get(WindowsFileAttributes.java:307)
+        at java.base@17.0.1/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:51)
+        at java.base@17.0.1/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+        at java.base@17.0.1/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199)
+        at java.base@17.0.1/sun.nio.fs.AbstractFileSystemProvider.isRegularFile(AbstractFileSystemProvider.java:137)
+        at java.base@17.0.1/java.nio.file.Files.isRegularFile(Files.java:2361)
+        at app//org.apache.commons.io.filefilter.FileFileFilter.accept(FileFileFilter.java:112)
+        at app//org.apache.commons.io.file.PathUtils.lambda$walk$3(PathUtils.java:1848)
+        at app//org.apache.commons.io.file.PathUtils$$Lambda$285/0x0000000800dac5e8.test(Unknown Source)
+        at java.base@17.0.1/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+        at java.base@17.0.1/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+        at java.base@17.0.1/java.util.Iterator.forEachRemaining(Iterator.java:133)
+        at java.base@17.0.1/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+        at java.base@17.0.1/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+        at java.base@17.0.1/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+        at java.base@17.0.1/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+        at java.base@17.0.1/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+        at java.base@17.0.1/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+        at app//org.apache.commons.io.FileUtils.toList(FileUtils.java:3025)
+        at app//org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2314)
+        at app//io.github.bonigarcia.wdm.cache.CacheHandler.getFilesInCache(CacheHandler.java:74)
+        at app//io.github.bonigarcia.wdm.cache.CacheHandler.getDriverFromCache(CacheHandler.java:84)
+        at app//io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1172)
+        at app//io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+        at app//rahulshettyacademy.TestComponents.BaseTest.initializeDriver(BaseTest.java:46)
+        at app//rahulshettyacademy.TestComponents.BaseTest.launchApplication(BaseTest.java:67)
+        at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
+        at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+        at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+        at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+        at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+        at app//org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+        at app//org.testng.TestRunner.beforeRun(TestRunner.java:644)
+        at app//org.testng.TestRunner.run(TestRunner.java:610)
+        at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+        at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+        at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+        at app//org.testng.SuiteRunner.run(SuiteRunner.java:312)
+        at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+        at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+        at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+        at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+        at app//org.testng.TestNG.runSuites(TestNG.java:1112)
+        at app//org.testng.TestNG.run(TestNG.java:1079)
+        at app//org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+        at app//org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+        at app//org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+        at app//org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.1/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@17.0.1/java.lang.ref.Reference.processPendingReferences(Reference.java:253)
+        at java.base@17.0.1/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@17.0.1/java.lang.Object.wait(Native Method)
+        at java.base@17.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@17.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+        at java.base@17.0.1/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.1/java.lang.Object.wait(Native Method)
+        at java.base@17.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@17.0.1/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+        at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+        at java.base@17.0.1/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+"surefire-forkedjvm-stream-flusher" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+        at java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+        at java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@17.0.1/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@17.0.1/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:197)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:579)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$600(ForkedBooter.java:79)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:322)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:357)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:309)
+        at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+
+
+
+# Created at 2025-04-24T11:32:59.599
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (8000@DESKTOP-RNNVGUF):
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.1/sun.nio.fs.WindowsNativeDispatcher.GetFileAttributesEx0(Native Method)
+        at java.base@17.0.1/sun.nio.fs.WindowsNativeDispatcher.GetFileAttributesEx(WindowsNativeDispatcher.java:390)
+        at java.base@17.0.1/sun.nio.fs.WindowsFileAttributes.get(WindowsFileAttributes.java:307)
+        at java.base@17.0.1/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:51)
+        at java.base@17.0.1/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+        at java.base@17.0.1/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199)
+        at java.base@17.0.1/sun.nio.fs.AbstractFileSystemProvider.isRegularFile(AbstractFileSystemProvider.java:137)
+        at java.base@17.0.1/java.nio.file.Files.isRegularFile(Files.java:2361)
+        at app//org.apache.commons.io.filefilter.FileFileFilter.accept(FileFileFilter.java:112)
+        at app//org.apache.commons.io.file.PathUtils.lambda$walk$3(PathUtils.java:1848)
+        at app//org.apache.commons.io.file.PathUtils$$Lambda$285/0x0000000800dac5e8.test(Unknown Source)
+        at java.base@17.0.1/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+        at java.base@17.0.1/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+        at java.base@17.0.1/java.util.Iterator.forEachRemaining(Iterator.java:133)
+        at java.base@17.0.1/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+        at java.base@17.0.1/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+        at java.base@17.0.1/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+        at java.base@17.0.1/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+        at java.base@17.0.1/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+        at java.base@17.0.1/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+        at app//org.apache.commons.io.FileUtils.toList(FileUtils.java:3025)
+        at app//org.apache.commons.io.FileUtils.listFiles(FileUtils.java:2314)
+        at app//io.github.bonigarcia.wdm.cache.CacheHandler.getFilesInCache(CacheHandler.java:74)
+        at app//io.github.bonigarcia.wdm.cache.CacheHandler.getDriverFromCache(CacheHandler.java:84)
+        at app//io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1172)
+        at app//io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+        at app//rahulshettyacademy.TestComponents.BaseTest.initializeDriver(BaseTest.java:46)
+        at app//rahulshettyacademy.TestComponents.BaseTest.launchApplication(BaseTest.java:67)
+        at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base@17.0.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+        at java.base@17.0.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base@17.0.1/java.lang.reflect.Method.invoke(Method.java:568)
+        at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+        at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+        at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+        at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+        at app//org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+        at app//org.testng.TestRunner.beforeRun(TestRunner.java:644)
+        at app//org.testng.TestRunner.run(TestRunner.java:610)
+        at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+        at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+        at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+        at app//org.testng.SuiteRunner.run(SuiteRunner.java:312)
+        at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+        at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+        at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+        at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+        at app//org.testng.TestNG.runSuites(TestNG.java:1112)
+        at app//org.testng.TestNG.run(TestNG.java:1079)
+        at app//org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+        at app//org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+        at app//org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+        at app//org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.1/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@17.0.1/java.lang.ref.Reference.processPendingReferences(Reference.java:253)
+        at java.base@17.0.1/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@17.0.1/java.lang.Object.wait(Native Method)
+        at java.base@17.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@17.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+        at java.base@17.0.1/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.1/java.lang.Object.wait(Native Method)
+        at java.base@17.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@17.0.1/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+        at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+        at java.base@17.0.1/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+"surefire-forkedjvm-stream-flusher" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+        at java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+        at java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@17.0.1/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@17.0.1/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:197)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:579)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$600(ForkedBooter.java:79)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:315)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:357)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:367)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:330)
+        at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+
+
+
