@@ -82,6 +82,8 @@ public class StandAloneTest {
 		System.out.println("End to end process completed");
 		System.out.println("End to end process completed");
 		
+		System.out.println("End to end process completed");
+		System.out.println("End to end process completed");
 		
 		driver.close();
 		

@@ -115,7 +115,8 @@ public class SubmitOrderTest {
 		//driver.close();
 		
 		
-		
+		System.out.println("End to end process completed");
+		System.out.println("End to end process completed");
 		
 		
 	}
