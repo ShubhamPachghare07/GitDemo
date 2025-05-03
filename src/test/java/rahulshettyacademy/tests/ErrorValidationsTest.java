@@ -54,5 +54,10 @@ public class ErrorValidationsTest extends BaseTest {
 		boolean match = cartPage.verifyProductDisplay("ZARA COAT 33");
 		Assert.assertFalse(match);
 	}
+	
+	@Test
+	public void textForGIT() {
+		System.out.println("Added by Asian user");
+	}
 
 }
