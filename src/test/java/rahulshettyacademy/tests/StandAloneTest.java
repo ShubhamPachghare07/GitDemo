@@ -77,6 +77,11 @@ public class StandAloneTest {
 		String confirmMessage = driver.findElement(By.cssSelector(".hero-primary")).getText();
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase("Thankyou for the order."));
 		
+		// Added some print statements for GITHUB
+		System.out.println("End to end process completed");
+		System.out.println("End to end process completed");
+		
+		
 		driver.close();
 		
 		
