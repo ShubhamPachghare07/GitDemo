@@ -80,6 +80,7 @@ public class StandAloneTest {
 		// Added some print statements for GITHUB
 		System.out.println("End to end process completed");
 		System.out.println("End to end process completed");
+		System.out.println("End to end process completed");
 		
 		
 		driver.close();
