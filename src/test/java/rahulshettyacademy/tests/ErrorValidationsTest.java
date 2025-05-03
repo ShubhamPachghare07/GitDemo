@@ -59,5 +59,9 @@ public class ErrorValidationsTest extends BaseTest {
 	public void textForGIT() {
 		System.out.println("Added by Asian user");
 	}
+	
+	public void textForGIT2() {
+		System.out.println("Added by US user");
+	}
 
 }
